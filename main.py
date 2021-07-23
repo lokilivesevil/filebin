@@ -123,7 +123,7 @@ functionality:
     3) if no then returns a user friendly message to the user saying invalid request
 
 returns:
-    case hash_found: fetches the file, delete the redis key
+    case hash_found: fetches the file, delete the redis entry
     case hash_not_found: returns a user friendly message saying invalid url
 
 """
