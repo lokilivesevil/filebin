@@ -117,14 +117,15 @@ Controller for the download file api.
 Purpose: returns the file and deletes it from the system 
 Methods allowed: GET
 
-returns:
-    case hash_found: fetches the file, delete the redis key
-    case hash_not_found: returns a user friendly message saying invalid url
-
 functionality:
     1) checks if the hash is present in redis cluster
     2) if yes then fetches the file and deletes the key from redis
     3) if no then returns a user friendly message to the user saying invalid request
+
+returns:
+    case hash_found: fetches the file, delete the redis key
+    case hash_not_found: returns a user friendly message saying invalid url
+
 """
 
 
